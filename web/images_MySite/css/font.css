@@ -1,0 +1,6 @@
+/* persian */
+@font-face {
+  font-family:'IRANIANSANS';
+  font-style: normal;
+  src: url(../fonts/IRANIANSANS.TTF) format('truetype');
+}

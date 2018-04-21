@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/vendor/jquery-1.11.2.min.js" type="text/javascript"></script>
+    </head>
+    <style>
+        .div1{
+            width:10%;
+            height:100px;
+            background-color:red;
+            display: none;
+            float:right;
+            margin-right: 100px;
+        } 
+        
+    </style>
+    <body>
+        <div>TODO write content</div>
+        <div>
+            <ul style="height: 100%;padding:0;">
+                <div class="div1" id="s1"> <li style="float:right;width:20px;height:100%;"> s</li></div>
+                <div class="div1"id="s2"> <li style="float:right;width:20px;height:100%;"> s</li></div>
+                <div class="div1"id="s3"> <li style="float:right;width:20px;height:100%;"> s</li></div>
+                <div class="div1" id="s4"> <li style="float:right;width:20px;height:100%"> s</li></div>
+                <div class="div1" id="s5"><li style="float:right;width:20px;height:100%;"> s</li></div>
+                
+            </ul>
+             <ul  style="height: 100%;padding:0;">
+             <li id="a1" style="float:right;width:100px;height:100%;"> s</li>
+              <li id="a2" style="float:right;width:100px;height:100%;"> s</li>
+               <li  id="a3" style="float:right;width:100px;height:100%;"> s</li>
+                 <li  id="a4" style="float:right;width:100px;height:100%"> s</li>
+               <li id="a5" style="float:right;width:100px;height:100%;"> s</li>
+                
+            </ul>
+        </div>
+         <script>// $("#a1").click(function(){
+//        $("#s1").ani
+//    });
+    $( "#a1" ).click(function() {
+  $( "#s1" ).animate({
+    width: [ "400px" ],
+    height: ["500px" ],
+    opacity: "toggle",margin:"100px 400px "
+  }, 200, "linear", function() {
+    $( this ).after( "<div>Animation complete.</div>" );
+  });
+});
+    
+    $( "#a2" ).click(function() {
+  $( "#s2" ).animate({
+    width: [ "400px" ],
+    height: ["500px" ],
+    opacity: "toggle",margin:"100px 400px "
+  }, 200, "linear", function() {
+    $( this ).after( "<div>Animation complete.</div>" );
+  });
+});
+    
+    </script>
+    </body>
+   
+</html>
